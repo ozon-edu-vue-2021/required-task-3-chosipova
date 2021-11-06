@@ -18,7 +18,7 @@
       <div v-if="!isUserOpenned" class="legend">
         <div class="legend__data">
           <div v-if="legend.length > 0" class="legend__items">
-            <Draggable v-model="legend">
+            <Draggable v-model="legend" @end="makeChart">
               <LegendItem
                 v-for="(item, index) in legend"
                 :key="index"
