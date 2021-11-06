@@ -31,7 +31,7 @@ export default {
     },
     isUserOpennedState: {
       get: function () {
-        return this.selectedTableId !== null ? true : false;
+        return this.selectedTableId !== null;
       },
       set: function () {
         this.selectedTableId = null;
